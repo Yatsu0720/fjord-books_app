@@ -8,7 +8,7 @@ en:
           has_one: Cannot delete record because a dependent %{record} exists
           has_many: Cannot delete record because dependent %{record} exist
     models:
-      book: Book  #g
+      book: Books  #g
 
     attributes:
       book:
