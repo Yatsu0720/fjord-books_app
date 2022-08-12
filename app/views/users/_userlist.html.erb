@@ -1,0 +1,12 @@
+<p>
+  <ul>
+    <% list.each do |user| %>
+    <li>
+      <%= link_to user.name, user_path(user) %>
+      <%= user.self_introduction %>
+    </li>
+    <% end %>
+  </ul>
+</p>
+
+<%= link_to t('views.common.back'), user_path %>

@@ -37,12 +37,14 @@ group :development do
   gem 'faker'
   gem 'i18n_generators'
   gem 'letter_opener_web'
+  gem 'erb_lint', require: false
   gem 'listen', '~> 3.3'
   gem 'rack-mini-profiler', '~> 2.0'
   gem 'rubocop-fjord', require: false
   gem 'rubocop-rails', require: false
   gem 'spring'
   gem 'web-console', '>= 4.1.0'
+
 end
 
 group :test do
@@ -61,7 +63,7 @@ gem 'net-pop'
 gem 'net-smtp'
 
 gem 'carrierwave'
-gem 'kaminari'
 gem 'devise'
 gem 'devise-i18n'
 gem 'image_processing', '~> 1.2'
+gem 'kaminari'
