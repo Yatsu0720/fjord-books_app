@@ -2,7 +2,7 @@
 
 class UsersController < ApplicationController
   def index
-    @user= User.all.includes(:user).order(created_at: :desc).page(params[:page])
+    @users= User.order(created_at: :desc).page(params[:page])
   end
 
   def show
